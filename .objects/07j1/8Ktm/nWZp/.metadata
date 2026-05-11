@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Test Case - Test Manager",
+  "Type": "Screen",
+  "Id": "nWZp4JW6xk2_1Hr9IKG3fw",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/nWZp4JW6xk2_1Hr9IKG3fw",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/8KtmpoF52Eyamaq7SL8mVA",
+  "Created": "2026-01-19T04:53:32.489963Z",
+  "Updated": "2026-01-19T04:53:32.489963Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.19.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
