@@ -104,25 +104,25 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestCase" sap:VirtualizedContainerService.HintSize="571.3333333333333,2223.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestCase" sap:VirtualizedContainerService.HintSize="870,518" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Login in SHHM with Mobile Number" sap:VirtualizedContainerService.HintSize="554,2200.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Login in SHHM with Mobile Number" sap:VirtualizedContainerService.HintSize="520,495.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Open SHHM Desktop Application" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,2118" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="e7568818-0631-4de2-ba69-2da938d4216d" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Authentication Screen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,412.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="e7568818-0631-4de2-ba69-2da938d4216d" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,1870.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,165.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="SharedMobileNumber" />
               </Sequence.Variables>
@@ -131,7 +131,7 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Login With Registered Mobile Number" sap:VirtualizedContainerService.HintSize="484,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Login With Registered Mobile Number" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -191,10 +191,10 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </uix:NClick>
               </Sequence>
-              <Sequence DisplayName="Verify OTP Sent on Mobile Number" sap:VirtualizedContainerService.HintSize="484,1753.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Verify OTP Sent on Mobile Number" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -235,14 +235,15 @@
                     </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
-                <Sequence DisplayName="Verify Login Successful" sap:VirtualizedContainerService.HintSize="450,350" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Verify Login Successful" sap:VirtualizedContainerService.HintSize="450,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="ui:UiElement" Name="VisibleInnerText" />
                     <Variable x:TypeArguments="x:String" Name="ButtonText" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <uix:NGetText DisplayName="Get Text 'Logout'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="e7568818-0631-4de2-ba69-2da938d4216d" TextString="[ButtonText]" Version="V5">
@@ -300,14 +301,7 @@
           </ActivityFunc>
         </uix:NApplicationCard.OCREngine>
         <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="679, 135, 563, 750" ContentHash="QSKN2k1PikOC090n6ogIHw" FilePath="C:\Users\suman\Downloads\RunSatara-Desktop app\RunSatara-Desktop app\net10.0-windows\runsatara.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAK0SURBVFhH7dhbTxNBFMDxPtntZXv/ksqlaitrK9AiIl7QWk36AfoRjI8KvVEtUqogIpTis8SE974cM2dntrM7k1m7JlqTneQfAZPTX87hRQMB//nPf+pXXMqXDCN/VTDyMGsRW8D5w39Rp9OR/kkWNxNAVQgcj8czmQ/806TAer0OtVrNinzP//1m9ydkXn2HzMsLLF29gPSLEZaqnEPq+ZB2BqlnZ5DcOoXU1ikkn36DjdaPqT5LCnQLQdURZKojSFfOIV1hoCGCMASZqOQT0gkkH59A4tFXYZ4qb0BE0U0haIggC8WBGArbPIbEw2Nhniop0G3tFuy3UV8gTto4gviDo6k+Swp0yzzdBJVAFAdiUVSCwuLrhxC7/1mYp8obkNtUElGTTZETsk2RYhSFrX3CnPNUSYFua7dtip3OQh1am7JQ5QGmk0qDqT5LCnRLQK2TKMiJKg0gVjoAffUA9JU+6Kt9YZ4qT0D2+2Sh6OkYTGcgrI+w6PI+6Mv7EL33UZinSgp0W7sNRTcVKw1sIEStmCBSpLgH0eIeRAo9AaFKCnSLnY6AzPMxkLkpHoUVehC524OI8QHCxnthnipPQH5LOrelaJHkRPUQFV4idSF8pyvMUyUFup2Y35J1voJ9UxEHKpzfxUK5XQGhSgp0i2zKeTp2PkQREEWFENWB0G1SG0K32sI8VZ6AiGIw3JIdFc4xVNtKu9kyy7aEeaqkQLcTm6ejqDy3KW5LJB6lZZugLTYguLAjIFRJgW5Nfp/sp9MsVJOCJihsfhuCc9vCPFWegFIUAWWbEFxsSFHXbrwzu/5WmKfKG5BH0S1ZqPkdBGEcis85T5Un4NqbEW4quNAAzYmak6NY5ddDYZ4qT8C/2f8BNIzc1eWl/V9bsxAxMWCZfDFrkcURm/M/u/znP/853i9gJfOfVIkqhAAAAABJRU5ErkJggg==" InformativeScreenshot="4a85d4bb5092cc11b3342baba05eda8b.png" Reference="MxNu6IYXQEiXuntZkOyw8A/nRxBUtijekyThdR9IGbY0Q" Selector="&lt;wnd app='runsatara.exe' cls='HwndWrapper*' title='RunSatara - Sign In' /&gt;" Version="V2">
-            <uix:TargetApp.Arguments>
-              <InArgument x:TypeArguments="x:String" />
-            </uix:TargetApp.Arguments>
-            <uix:TargetApp.WorkingDirectory>
-              <InArgument x:TypeArguments="x:String" />
-            </uix:TargetApp.WorkingDirectory>
-          </uix:TargetApp>
+          <uix:TargetApp Area="623, 54, 675, 900" ContentHash="NpXSNkrki0iru-NFJvSq5A" FilePath="C:\Users\Nitin Chauhan\Downloads\RunSatara-Desktop app (1)\RunSatara-Desktop app\net10.0-windows\runsatara.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMsSURBVGhD7ZlbTxNBFMf7JPQCpS3fD1+9odDCFhGBYkUU7wkfgI9gfBSEWhC5KYIiN3mWxPDel3HOmQuzO9PkJJNQanaSX0qazeH3/+/Zl24iPvGJT3xae0aHi31BUDofCUqsrRgqnpbLxb4E/OG84ApRr9edn1B8Ql3UrmCARqPRlsQBWs3/G2B+fp7Nzc2FgO+i102v/mW9b09Z75vfSOE1cMIKr4BjVngJHLH8C8nzQ5afPWS52QOWewb8YtXaH2su9f973wGURnElzZHShYh03pDOPVXss9zMvnM2Be8A4aaPddMoj+IHEXEhDPQ8+SmY/uGcTcE/AIijrBTm4HooaaPlnhkpLKWRx3ssy3HNptA0AHUH7fUIS0ebFtJSvLoreLRrzb20ZyDvlDabluIgXd1DlHR26jvSXdlxzqbgHcCU1uK6ZdF0j9G0ks5WhDgy+c05m4J3AN20Fo+0jHDZqR3dNggjE19ZFzC+7ZxNoWkA6g4q6WxIWq4GlzZbVtKacS7/cJt1jW1Zcy/tGQg1LdfjQlqKS2FoGoWRLRTPPNhkmbFN52wK/gGkdFa1HWnaJY2A+OiG4P6GczYF7wDdFSkcldbismneMratpddRPD2yzvninE2haQDqDprS3UpatgzC0LRuOyKdLgNrLB2sWXMv7Rkw1yODTYO4bFmuhy3N4dKp4c8a12wK/gFk02FpaJoLA0qaC0elU0OrLFVaZcnSinM2Be8AljQIa2khbkuvCIorLFmss+Rg3TmbQtMA1B3ULaO0aDkdCNm0Ejakk1r6k6ZzoGbNpeJ9B8wHETGlpTgKy6a1+ABQY513lzktDGCth5aWKGklfO9CurOff/YvsY47S87ZFPwDWNJG0yjNVwSklThKL3Ppj4Lbi4hrNoWmAajPwIUwRwmHmpbwpkXbhvgtYIFdu7lgzaXifQdU05a0Wg8lLZs2pZEbHxDXbAr+AULShnBTaSEcxTWbgneAyfcn4dUAUHgx3DIX7zAaN5l4d+ScTcE7QKuJA7QaDBAExfOzM/vnvasOOMPLGR5g8Ho7vKWJAsWDu3xTFp/4xCc+LTmJxD+6pAQFM4+xagAAAABJRU5ErkJggg==" InformativeScreenshot="a969a434f62a52a8711a30ab9dec7fbf.png" Reference="MxNu6IYXQEiXuntZkOyw8A/nRxBUtijekyThdR9IGbY0Q" Selector="&lt;wnd app='runsatara.exe' cls='HwndWrapper*' title='RunSatara - Sign In' /&gt;" Version="V2" />
         </uix:NApplicationCard.TargetApp>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
