@@ -95,7 +95,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TC01_DB" sap:VirtualizedContainerService.HintSize="571.3333333333333,867.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TC01_DB" sap:VirtualizedContainerService.HintSize="870,867.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="DB_Connection" />
       <Variable x:TypeArguments="x:String" Name="UserData" />
@@ -113,7 +113,7 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Driver={PostgreSQL Unicode};server=localhost;port=5432;database=UiPath Testing;uid=postgres;pwd=Pass@1708" DatabaseConnection="[DB_Connection]" />
+      <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Driver={PostgreSQL Unicode};server=dev1.register.runsatara.com;port=5432;database=postgres;uid=admin;pwd=nrvQJup7^eitwH!&amp;c4Cc" DatabaseConnection="[DB_Connection]" />
       <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="SharedMobileNumber" CacheStrategy="None" DisplayName="Get Asset from Orchestrator" FolderPath="Testing" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
         <ui:GetRobotAsset.Value>
           <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.NewRegistrationMobileNumber]</OutArgument>

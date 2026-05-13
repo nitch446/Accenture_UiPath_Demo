@@ -46,14 +46,14 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "97f9c982-e1a6-42f0-ae5e-2523b15822f5",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "UiPath Demo\\01_SHHM Web\\TC01_Register New User.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "4f8828a9-7bb9-40cb-8361-add586749226",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
@@ -67,7 +67,7 @@
         "fileName": "UiPath Demo\\03_SHHM Database\\TC03_DataBase.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "c9d53e4c-992c-4bb0-a1ac-e0e38fc06c73",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
