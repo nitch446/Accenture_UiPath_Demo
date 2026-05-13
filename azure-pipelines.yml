@@ -38,7 +38,7 @@ steps:
     traceLevel: 'Verbose'
 
 - task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UPD:5'
+  displayName: 'Run Test Manager Test Set - UPD:82'
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'CICD_TM'
