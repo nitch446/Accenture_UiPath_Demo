@@ -1,0 +1,48 @@
+trigger:
+- none
+
+pool:
+  name: 'Nitin'
+  demands:
+  - agent.name -equals AgentNitin
+
+steps:
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UPD:1'
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'CICD_TM'
+    projectKey: 'UPD'
+    testSet: 'UPD:1'
+    folderName: 'Testing'
+    traceLevel: 'Verbose'
+
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UPD:3'
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'CICD_TM'
+    projectKey: 'UPD'
+    testSet: 'UPD:3'
+    folderName: 'Testing'
+    traceLevel: 'Verbose'
+
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UPD:5'
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'CICD_TM'
+    projectKey: 'UPD'
+    testSet: 'UPD:5'
+    folderName: 'Testing'
+    traceLevel: 'Verbose'
+
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UPD:5'
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'CICD_TM'
+    projectKey: 'UPD'
+    testSet: 'UPD:82'
+    folderName: 'Testing'
+    traceLevel: 'Verbose'
